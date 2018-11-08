@@ -36,3 +36,7 @@ The goals of this website were:
 - Subscribing volunteers to those activities.
 
 To store information, I used a database and handled it using Microsoft SQL Server Management Studio. To program I used Visual Studio which allows using all of the technologies needed in one program.
+
+---------------------------------------------------------------------------
+
+This project was made using Visual Studio IDE. To open it just download this folder and import its contents using Visual Studio. No further action is needed.
