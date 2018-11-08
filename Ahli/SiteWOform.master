@@ -1,0 +1,189 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteWOform.master.cs" Inherits="SiteWOform" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title><%: Page.Title %> | Ahli Center</title>
+
+    <!-- CSS files are referenced in Bundle.config -->
+    <webopt:bundlereference runat="server" path="~/css" />
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+   <asp:ContentPlaceHolder ID="headerBottom" runat="server">
+   </asp:ContentPlaceHolder>  
+
+</head>
+<body>
+     
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow ">
+                   <div class="social-icons pull-right">                     
+                        <ul class="nav nav-pills">
+                            <li><a href="https://www.facebook.com/centre.ahlifes"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="~/" runat="server">
+                    	<h1><img src="images/logo.png" alt="logo" style="padding-left: 10px; height: 60px;"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="~/" runat="server" >Home</a></li>
+                        <li class="active"><a href="~/Contact" runat="server" >Contact-us</a></li>
+                        <li class="active"><a href="~/About" runat="server" >About</a></li>                        
+
+                        <li runat="server" id="navSignup" Visible="true"><a href="~/Signup" runat="server" >Sign-up</a></li>
+                        <li runat="server" id="navLogin" Visible="true"><a href="~/Login" runat="server" >Log-in</a></li>                                                
+
+                        <li class="dropdown" runat="server" id="navConnectedLi" Visible="false"><a href="#">Actions<i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li runat="server" id="navAddChild" Visible="false"><a href="~/AddChild" runat="server">Add Child</a></li>
+                                <li runat="server" id="navCreateActivity" Visible="false"><a href="~/CreateActivity" runat="server" >Create activity</a></li>                                
+                                <li runat="server" id="navAddRelatedPerson" Visible="false"><a href="~/AddRelatedPerson" runat="server">Add a related person to a child</a></li>
+                            </ul>
+                        </li>   
+
+                        <li runat="server" id="navLogout" Visible="false"><a href="~/Logout" runat="server" >Log-out</a></li>
+                        <li runat="server" id="navPersonName" Visible="false"><a href="~/Profile" id="nameHref" runat="server">Nobody logged-in</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+        
+   <asp:ContentPlaceHolder ID="MainContent" runat="server">
+   </asp:ContentPlaceHolder>            
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/home/under.png" class="img-responsive inline" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial bottom">
+                        <div class="media" style="float: left; margin: 0px 125px 0px 0px;min-height: 1px;">
+                        </div>
+                        <h2>Testimonials</h2>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
+                                <h3><a href="#">- Director</a></h3>
+                            </div>
+                         </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+                                <h3><a href="#">- Educator</a></h3>
+                            </div>
+                        </div>   
+                    </div> 
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contact-info bottom">
+                        <h2>Contacts</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
+                        Phone:  +212 xx xx xx xx<br> 
+                        Fax:    +212 xx xx xx xx <br> 
+                        </address>
+
+                        <h2>Address</h2>
+                        <address>
+                        KM 2 Route d’Immouzer, <br> 
+                        Fès, 30050, <br> 
+                        Maroc <br>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="contact-form bottom">
+                        <h2>Send a message</h2>
+<%--                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                            <div class="form-group">
+                                <p id="unknownUBottomContactForm" runat="server" Visible="false">Unknown User</p>
+                                <asp:TextBox runat="server" type="text" name="name" class="form-control" required="required" placeholder="Name" id="nameBottomContactForm" Visible="true"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <p id="emailUnknownUBottomContactForm" runat="server" Visible="false">Unknown User's email</p>
+                                <asp:TextBox runat="server" type="email" name="email" class="form-control" required="required" placeholder="Email" id="emailBottomContactForm" Visible="true"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+                            </div>                        
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
+                            </div>
+                        </form>
+--%>                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="footer-space">                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <div style="background-color:#8dced4; width: 100%; height:80px;">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; Ahli Center <%: DateTime.Now.Year %>. All Rights Reserved.</p>
+                        <p>Website made by <a target="_blank" href="~/Profile?u_id=1" runat="server"><b>AymaneShadow</b></a></p>
+                        <p>Design crafted by <a target="_blank" href="http://designscrazed.org/"><b>Allie</b></a></p>                        
+                    </div>
+                </div>
+        </div>
+    <!--/#footer-->
+
+   <asp:ContentPlaceHolder ID="footerBottom" runat="server">
+   </asp:ContentPlaceHolder>
+
+</body>
+</html>
