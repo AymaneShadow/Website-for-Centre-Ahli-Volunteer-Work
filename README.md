@@ -5,7 +5,7 @@ The website is still under construction and is not available for the public righ
 
 Project information
 
-> Client side:
+Client side:
 
 • HTML
 
@@ -14,7 +14,7 @@ Project information
 • JavaScript
 
 
-> Server side:
+Server side:
 
 • C#
 
@@ -23,7 +23,7 @@ Project information
 • Microsoft SQL Server
 
 
-> Software:
+Software:
 
 • Visual Studio
 
