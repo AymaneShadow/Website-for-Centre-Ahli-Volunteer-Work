@@ -3,24 +3,38 @@
 A website for “Centre Ahli”, a center that welcomes boys in precarious situations whose ages vary between 7 and 15 years.
 The website is still under construction and is not available for the public right now.
 
+
 Project information
 
+
 Client side:
-HTML
-CSS
-JavaScript
+
+• HTML
+
+• CSS
+
+• JavaScript
+
 
 
 Server side:
-C#
-ASP.NET
-Microsoft SQL Server
+
+• C#
+
+• ASP.NET
+
+• Microsoft SQL Server
+
 
 
 Software:
-Visual Studio
-Microsoft SQL Server Management Studio
-FileZilla
+
+• Visual Studio
+
+• Microsoft SQL Server Management Studio
+
+• FileZilla
+
 
 
 The goals of this website were:
