@@ -31,8 +31,8 @@ The goals of this website were:
 
 • To automate some tasks that are performed daily by the educators, such as:
 
-> Organizing activities with the children.
-> Adding children to those activities.
-> Subscribing volunteers to those activities.
+- Organizing activities with the children.
+- Adding children to those activities.
+- Subscribing volunteers to those activities.
 
 To store information, I used a database and handled it using Microsoft SQL Server Management Studio. To program I used Visual Studio which allows using all of the technologies needed in one program.
