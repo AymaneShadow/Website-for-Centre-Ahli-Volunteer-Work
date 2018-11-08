@@ -6,21 +6,30 @@ The website is still under construction and is not available for the public righ
 Project information
 
 Client side:
-HTML
-CSS
-JavaScript
+
+• HTML
+
+• CSS
+
+• JavaScript
 
 
 Server side:
-C#
-ASP.NET
-Microsoft SQL Server
+
+• C#
+
+• ASP.NET
+
+• Microsoft SQL Server
 
 
 Software:
-Visual Studio
-Microsoft SQL Server Management Studio
-FileZilla
+
+• Visual Studio
+
+• Microsoft SQL Server Management Studio
+
+• FileZilla
 
 
 The goals of this website were:
